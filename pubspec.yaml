@@ -1,0 +1,44 @@
+name: my_rehbar
+description: "Voice recorder feature — records mic audio and returns base64-encoded bytes."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.4.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Audio recording — streams raw bytes from microphone
+  record: ^6.0.0
+
+  # Microphone permission for Android & iOS
+  permission_handler: ^11.3.1
+
+  # WebSocket client — streams audio to backend
+  web_socket_channel: ^3.0.1
+
+  # Device temp directory — for saving .m4a audio file
+  path_provider: ^2.1.4
+  http: ^1.6.0
+  google_fonts: ^6.2.1
+  syncfusion_flutter_pdf: ^33.1.44
+  file_picker: ^10.3.10
+  archive: ^4.0.9
+  xml: ^6.6.1
+  google_generative_ai: ^0.4.7
+  flutter_tts: ^4.2.5
+  audioplayers: ^6.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/datasets/
